@@ -90,6 +90,11 @@ const styles = {
 }; 
 ```
 
+* 4. style을 합치는 법
+```javascript
+style={{...styles.day, alignItems: "center"}}
+```
+
 * StatusBar는 서드파티 패키지. 시계, 배터리, Wi-Fi 등을 의미. "light", "dark" 등 조절 가능(운영체제와 소통하기 위한 컴포넌트).
 ```jsx
 import { StatusBar } from 'expo-status-bar';

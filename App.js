@@ -12,8 +12,6 @@ export default function App() {
   const [days, setDays] = useState([]);
   const [ok, setOk] = useState(true);
 
-  // const API_KEY = "bbffc312b36ecda383cdc3c308feefff"
-
   const icons = {
     "01d": "day-sunny",
     "02d": "day-cloudy",
