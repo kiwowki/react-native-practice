@@ -7,7 +7,7 @@ npx create-expo-app my-new-project --template blank(현재(2024년 기준)에도
 
 ## 레이아웃 만들기
 - react-native는 레이아웃을 만들 때 flexbox를 사용해야 함
-- 기본적으로 모든 <VIEW>는 display: flex, flexDirection: "column"이 적용되어있음(web은 기본적으로 row 상태임)
+- 기본적으로 모든 `<VIEW>`는 display: flex, flexDirection: "column"이 적용되어있음(web은 기본적으로 row 상태임)
 - 어플은 기본적으로 반응형으로 만들어야 하기 때문에 width와 height는 사용하지않음.(아바타 크기 정도는 사용할지도..?)
 - width, height 대신 flex: 00 형식으로 만들어야 함.
 - 부모가 flex: 1이고, 자식들도 flex: 1이라면 부모 요소에 동일한 자식 크기로 배치한다는 뜻.
@@ -15,7 +15,7 @@ npx create-expo-app my-new-project --template blank(현재(2024년 기준)에도
 
 ## 스크롤뷰 만들기
 - 화면을 벗어나도 자동으로 스크롤이 생기지않음
-- <View>대신 <ScrollView>를 사용하여 작업
+- `<View>`대신 `<ScrollView>`를 사용하여 작업
 - 기존의 style prop으로는 style이 적용되지않음. [[contentContainerStyle](https://reactnative.dev/docs/scrollview#contentcontainerstyle)] 사용 필요
 - 좌 우 스크롤의 경우 flex 할당률을 주지않아야 스크롤이 정상적으로 작동 함.
 - 하나의 View가 폰의 너비에 맞게 나오게 하고싶을 때 width: 360 대신 Dimensions 사용
@@ -53,7 +53,7 @@ const { height: SCREEN_HEIGHT } = Dimensions.get('window');
 
 
 ### 기타 메모
-* 대신 모든 텍스트는 <p>나 <span> 등의 element가 아닌 <Text> component를 사용하여야 함(react-native는 브라우저가 아니므로 HTML을 사용하지않음)
+* 대신 모든 텍스트는 `<p>`나 `<span>` 등의 element가 아닌 `<Text>` component를 사용하여야 함(react-native는 브라우저가 아니므로 HTML을 사용하지않음)
 
 * 1. style은 jsx에서 직접 객체로 주거나,
 ```jsx
